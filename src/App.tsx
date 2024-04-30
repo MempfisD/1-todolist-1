@@ -1,8 +1,6 @@
 import React from 'react'
 import './App.css'
-import {TodoListHeader} from './TodoListHeader';
-import {AddTaskForm} from './AddTaskForm';
-import {TasksList} from './TasksList';
+import {TodoList} from './TodoList';
 
 // * CRUD
 // * Create
@@ -36,11 +34,7 @@ function App() {
 
 	return (
 			<div className="App">
-				<div>
-					<TodoListHeader title={todoListTitle}/>
-					<AddTaskForm/>
-					<TasksList tasks={tasks}/>
-				</div>
+				<TodoList todoListTitle={todoListTitle} tasks={tasks}/>
 			</div>
 	)
 }

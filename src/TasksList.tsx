@@ -11,7 +11,7 @@ export const TasksList = ({tasks}: TasksListPropsType) => {
 	const tasksList =
 			<ul>
 				{tasks.map(task => {
-					return <Task title={task.title} isDone={task.isDone}/>
+					return <Task key={task.id} title={task.title} isDone={task.isDone}/>
 				})}
 			</ul>
 	return (
